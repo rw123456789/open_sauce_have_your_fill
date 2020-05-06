@@ -1,0 +1,64 @@
+
+body, canvas {
+  /*cursor: url(/images/].png), auto;*/
+  cursor: cell;
+}
+
+body {
+  color: white;
+  font-family: Terminal Grotesque Open;
+  margin: 0px;
+  font-size: 10px;
+  -webkit-text-stroke-width: 0.25px;
+  -webkit-text-stroke-color: black;
+}
+
+
+h1 {
+  position:sticky;
+  text-align:left;
+  margin:20px;
+}
+
+h1{
+  font-size:7em;
+}
+
+h2{
+  font-size:9em;
+  text-align:left;
+}
+
+img{
+  display: flex;
+  margin: 0 auto;
+  padding: 50px;
+  border-radius:10px;
+}
+
+p{
+  width: 40%;
+  margin:10vh 10vw;
+  font-size: 2em;
+}
+
+ul{
+  list-style: none;
+  padding:0;
+  margin-bottom:10%;
+  font-size: 3em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+div.contrast{
+  color: red;
+}
+
+canvas {
+  background-image: url("../images/reduced.png");
+  display: block;
+  margin: 0 auto;
+  padding: 0px;
+  border-radius:6px;
+}

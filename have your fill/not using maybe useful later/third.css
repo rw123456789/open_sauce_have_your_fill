@@ -1,0 +1,54 @@
+body, canvas {
+  /*cursor: url(/images/].png), auto;*/
+  cursor: cell;
+}
+
+body {
+  color: white;
+  font-family: Terminal Grotesque Open;
+  margin: 0px;
+  font-size: 10px;
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: rgb(0,255,168);
+}
+
+h1 {
+  text-align:left;
+  margin:10px;
+}
+
+canvas {
+  background-image: url("../images/coverpage.jpg");
+  display: flex;
+  height:50vh;
+  width:50vw;
+  margin: 0 auto;
+  padding: 0px;
+  border-radius:10px;
+}
+
+body{text-align: center;background: #f2f6f8;}
+.img{position:absolute;z-index:1;}
+
+img {
+  width:100vw;
+  height:100vh;
+}
+
+#container{
+    display:inline-block;
+    width:320px;
+    height:480px;
+    background-image: url("../images/coverpage.jpg");
+    margin: 0 auto;
+    background: black;
+    position:relative;
+    border:5px solid black;
+    border-radius: 10px;
+    box-shadow: 0 5px 50px #333
+  }
+
+#can{
+    position:relative;
+    z-index:10;
+}
