@@ -150,16 +150,15 @@
         <div style="top:26%; left:7%;" class="color" id="color-yellow" rel="yellow"></div>
         <div style="top:15%; left:9%;" class="color" id="color-orange" rel="orange"></div>
       </div>
-      <div id="green"></div>
-
     </div>
     <div class="column canvas">
-      <canvas></canvas>
+      <canvas id="canvas" width="1000" height="1000"></canvas>
     </div>
     <div class="column actions">
       <div class="set">
-        <button id="bt-save" onclick="save()">Save</button>
-        <button id="bt-clear" onclick="erase()">Erase</button>
+        <button id="bt-draw" onclick="toolkit('draw')">Draw</button>
+        <button id="bt-save" onclick="toolkit('save')">Save</button>
+        <button id="bt-clear" onclick="toolkit('erase')">Erase</button>
       </div>
     </div>
   </div>
