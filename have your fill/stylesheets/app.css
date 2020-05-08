@@ -2,11 +2,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: #eee;
 }
 
 header {
-  padding: 3rem 0;
+  padding: 1rem 0;
   text-align: center;
+  background: #fff;
   border-bottom: 2px dashed #ddd;
 }
 
@@ -20,20 +22,20 @@ header {
 
   .grid .column {
     flex: 1;
-    background-color: #eee;
   }
 
   .grid .column.canvas {
-    width: 1000px;
-    height: 90vh;
-    flex: 0 0 1000px;
-    background-color: #ddd;
+    flex: 0 0 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+    padding: 2.5rem 0;
   }
 
     .column.canvas canvas {
       background: white;
-      width: 100%;
-      height: 100%;
+      width: 802px;
       cursor: crosshair;
     }
 
@@ -62,7 +64,6 @@ header {
 
 .toolkit {
   width: 100%;
-  height: 100vh;
 }
 
   .toolkit .palette {
@@ -96,3 +97,7 @@ header {
       font-size: 2em;
       font-weight: bold;
     }
+
+.canvasBackgroundImage {
+  display: none;
+}

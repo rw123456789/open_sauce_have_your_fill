@@ -4,6 +4,7 @@ var setupCanvas = function (canvas) {
   var dpr = window.devicePixelRatio || 1;
   // Get the size of the canvas in CSS pixels.
   var rect = canvas.getBoundingClientRect();
+  console.log(rect)
   // Give the canvas pixel dimensions of their CSS
   // size * the device pixel ratio.
   canvas.width = rect.width * dpr;
@@ -15,6 +16,11 @@ var setupCanvas = function (canvas) {
   ctx.strokeStyle = 'black';
   ctx.lineWidth = 2;
   return ctx;
+}
+
+var setCanvasBackground = function (id) {
+  var image = document.getElementById(id)
+  ctx.drawImage(image, 0, 0, canvas.width, canvas.height)
 }
 
 var canvas = document.getElementById('canvas')
@@ -43,6 +49,7 @@ $('#bt-clear-all').on('click', function () {
   var message = confirm("Are you sure?");
   if (message) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    setCanvasBackground('canvas-1')
     toolkit({
       tool: 'draw',
       color: 'black',
@@ -109,5 +116,5 @@ var toolkit = function({ tool, color, lineWidth } = { tool: 'draw', color: 'blac
 }
 
 $(document).ready(function() {
-
+  setCanvasBackground('canvas-1')
 })
