@@ -34,6 +34,7 @@ header {
       background: white;
       width: 100%;
       height: 100%;
+      cursor: crosshair;
     }
 
 .actions {
@@ -60,23 +61,38 @@ header {
   }
 
 .toolkit {
-
+  width: 100%;
+  height: 100vh;
 }
 
   .toolkit .palette {
     position: relative;
-    width: 100%;
-    height: 100%;
+    height: 30%;
   }
 
-    .toolkit .palette .color {
+    .toolkit .palette .bt-color {
       position: absolute;
       width: 4rem;
       height: 4rem;
       border-radius: 4rem;
+      cursor: pointer;
     }
 
-    .palette #color-green { background-color: green; }
-    .palette #color-red { background-color: red; }
-    .palette #color-yellow { background-color: yellow; }
-    .palette #color-orange { background-color: orange; }
+    .palette .bt-color.green { background-color: green; }
+    .palette .bt-color.red { background-color: red; }
+    .palette .bt-color.yellow { background-color: yellow; }
+    .palette .bt-color.orange { background-color: orange; }
+    .palette .bt-color.blue { background-color: blue; }
+
+  .toolkit .lineWidth {
+    height: auto;
+  }
+
+    .toolkit .lineWidth .bt-lineWidth {
+      border-radius: 20px;
+      background-color: #444;
+      color: white;
+      padding: 1rem;
+      font-size: 2em;
+      font-weight: bold;
+    }
