@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #eee;
+}
+
+header {
+  padding: 1rem 0;
+  text-align: center;
+  background: #fff;
+  border-bottom: 2px dashed #ddd;
+}
+
+  header h1 {
+    text-transform: uppercase;
+  }
+
+.grid {
+  display: flex;
+}
+
+  .grid .column {
+    flex: 1;
+  }
+
+  .grid .column.canvas {
+    flex: 0 0 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+    padding: 2.5rem 0;
+  }
+
+    .column.canvas canvas {
+      background: white;
+      width: 802px;
+      cursor: crosshair;
+    }
+
+.actions {
+
+}
+
+  .actions .set {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .actions button {
+    display: inline-block;
+    /* shared among two buttons */
+    border-radius: 10px;
+  }
+
+  .actions button#bt-save {
+    color: red;
+  }
+
+  .actions button#bt-clear {
+    color: green;
+  }
+
+.toolkit {
+  width: 100%;
+}
+
+  .toolkit .palette {
+    position: relative;
+    height: 30%;
+  }
+
+    .toolkit .palette .bt-color {
+      position: absolute;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 4rem;
+      cursor: pointer;
+    }
+
+    .palette .bt-color.green { background-color: green; }
+    .palette .bt-color.red { background-color: red; }
+    .palette .bt-color.yellow { background-color: yellow; }
+    .palette .bt-color.orange { background-color: orange; }
+    .palette .bt-color.blue { background-color: blue; }
+
+  .toolkit .lineWidth {
+    height: auto;
+  }
+
+    .toolkit .lineWidth .bt-lineWidth {
+      border-radius: 20px;
+      background-color: #444;
+      color: white;
+      padding: 1rem;
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+.canvasBackgroundImage {
+  display: none;
+}
